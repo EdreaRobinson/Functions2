@@ -11,7 +11,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+expression
 
 
 
@@ -28,7 +28,7 @@ const exclaimTwo = str => {
 
 // arrow
 // declaration
-// expression
+expression
 
 /*
   Rewrite exclaimTwo to be a single line.
@@ -36,6 +36,10 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
+
+const exclaimThree = str => `${str.toUpperCase() + '!!!'}`
+
+console.log(exclaimThree('hello'))
 
 
 
@@ -51,7 +55,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+declaration
 // expression
 
 
@@ -64,6 +68,10 @@ function exclaimFour(str) {
 
 //CODE HERE
 
+
+const jsNinja = str => {
+  return "I am a JavaScript ninja!"
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -78,6 +86,13 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+
+const compareNums = (num1, num2) => {
+  return num1 >= num2 ? num1
+       : num2
+}
+
+console.log(compareNums(25, 2))
 
   
 ////////// PROBLEM 6 //////////
@@ -94,3 +109,9 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+
+const bestMovie = movie => {
+  return `${movie} is the best movie ever!`
+}
+
+console.log(bestMovie("Dirty Dancing"))
